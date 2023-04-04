@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+
+
+<style>
+
+.content .container .mapouter{
+margin-top: 120px;
+height: 60%;
+}
+</style>
+</head>
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <!-- navbar  -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="" onclick="openmenu()"></i>
+            </nav>
+
+
+            <div class="header-text">
+                
+
+                <div class="deets">
+
+                    <p>Data Scientist</p>
+                    <h1>Hi, I'm <span>Clive</span><br> Nyaga</h1>
+                    
+                </div>
+
+                <img class="clive" src="https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                
+    
+               
+            </div>
+
+        </div>
+        
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://media.tenor.com/images/af7b20c2380754142f3d6d00230f52c5/tenor.gif">
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <table>
+                        <tr>
+                            <th>Date of Birth:</th>
+                            <td>07/05/2021</td>
+                        </tr>
+                        <tr>
+                            <th>Nationality:</th>
+                            <td>Kenyan</td>
+                        </tr>
+                        <tr>
+                            <th>Marital Status:</th>
+                            <td>Single</td>
+                        </tr>
+                        <tr>
+                            <th>Hobbies:</th>
+                            <td>Playing football, Conducting research, Reading books and articles, Socialising, Cooking</td>
+                        </tr>
+                        </table>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active tab" id="Skills">
+                        <ul>
+                            <li><span>Programming</span><br>Organising unstructured data sets using Python</li>
+                            <li><span>Analytical tools</span><br>Extracting valuable information from an organised data set using R</li>
+                            <li><span>Working with Unstructured Data</span><br>Working with unstructured data that comes from different channels and sources</li>
+                           
+                     </ul>
+                    </div>
+                   
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2024</span><br>Internship at Kenya Institute of Curriculum Development.</li>
+                            <li><span>2023</span><br>Data Science Training at DataCamp.</li>
+                            <li><span>2022</span><br>Web Development training at Moringa School.</li>
+                            <li><span>2021</span><br>ICDL Training at Kenyatta University.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>Bachelor of Information Technology at Kenyatta University</li>
+                            <li><span>2017 - 2021</span><br>Alliance High School</li>
+                            <li><span>2012 - 2016</span><br>Queen of Peace Academy</li>
+                            <li><span>2009 - 2011</span><br>Riverbank Preparatory</li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Programming</h2>
+                    <p>I am able to organise unstructured data sets using Python.  
+                    I am also competent with other programming languages susch as C++, SQL, Java, HTML, CSS and JavaScript.</p>
+                </div>
+                <div>
+                    <h2>Analytical Tools</h2>
+                    <p>I have been able to attain a handful of certificates over the years. The classes that I have taken so as to attain them have really helped me gain a lot of knowledge on analytical tools for extracting valuable information from organised data sets.</p>
+                </div>
+                <div>
+                    <h2>Working With Unstructured Data</h2>
+                    <p>I have been able to gain experience in working with unstructured data that comes from different channels and sources courtesy of my internship.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <div class="layer">
+                        <h3>Machine Learning</h3>
+                        <p>I am able to come up with systems that are able to make accurate predictions based on the data that is taken in as input.
+                        </p>
+        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.pexels.com/photos/3729557/pexels-photo-3729557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <div class="layer">
+                        <h3>Probability and Statistics</h3>
+                        <p>My expertise in data science has given me the skillset to work with huge amounts of data. I am now able to analyse data, identify various trends and even come up with possible outcomes and how likely those outcomes may actually come to be.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.pexels.com/photos/159581/dictionary-reference-book-learning-meaning-159581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <div class="layer">
+                        <h3>Language Translator</h3>
+                        <p>My exemplary understanding of English, Swahili and Spanish put me in a position to act as a translator for any of these three languages if need be.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class=""></i> nyagaclive@gmail.com</p>
+                <p><i class=""></i>0111507600</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <a href="My CV.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+        </div>
+    </div>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" 
+        src="https://maps.google.com/maps?q=Allsops-01001&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" 
+        marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;
+            text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas
+             {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+     
+      </div>
+
+    <div class="copyright">
+        <p>Copyright Clive. </p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");          
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");          
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby-KjNZFFn8S9dfU3zf_51vhmHo1V3Edca1kzztH5KPeZXI0bqLIZdvfwmLSTezvLD-NQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML  = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
