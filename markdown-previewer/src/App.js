@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Editor from './components/Editor';
 import Preview from './components/Preview';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
