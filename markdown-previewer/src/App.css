@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+
+.container {
+  margin: auto;
+  width: 97vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-box > h2 {
+  background-color: var(--primary-color);
+  border-left: 3px solid #0000ff;
+  margin: 0;
+  width: 100%;
+  box-shadow: 1px 2px 2px var(--accent-color);
+  text-indent: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.content-box {
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: var(--highlight-color);
+  box-shadow: 1px 2px 2px var(--accent-color);
+  max-height: 98vh;
+  height: 97vh;
+  display: grid;
+  grid-template-rows: 5% 95%;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+  font-size: var(--font-size);
+  background-color: transparent;
+  color: var(--placeholder-color);
+}
+
+textarea,
+#preview {
+  height: 99%;
+  width: 100%;
+  padding: 20px;
+}
+
+.resize-button {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .content-box {
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-box {
+  flex-basis: 50%;
+  transition: flex-basis 0.3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .content-box {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+}
+
+.content-box.maximized {
+  flex-basis: 100%;
+  z-index: 1;
+  position: fixed;
+  width: 97vw;
+}
+
+button {
+  height: 100%;
+  background-color: transparent;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: none;
+  color: rgb(111, 253, 75);
+  font-size: 1.3rem;
+  padding: 3px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body-box{
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
 }
